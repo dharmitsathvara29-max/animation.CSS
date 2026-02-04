@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Keyframe Animations</title>
+<style>
+.blink{
+  font-size:24px;
+  font-weight:bold;
+  color:blue;
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink{
+  0%{ opacity:1; }
+  50%{ opacity:0; }
+  100%{ opacity:1; }
+}
+
+.loader{
+  width:50px;
+  height:50px;
+  border:8px solid lightgray;
+  border-top:8px solid blue;
+  border-radius:50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+  from{ transform: rotate(0deg); }
+  to{ transform: rotate(360deg); }
+}
+.balls1
+        {
+            width:10px;
+            height:10px;
+            background:black;
+            border-radius:50%;
+            position:relative;
+            animation:float 1.5s infinite alternate;
+            display: inline-block;
+        }
+        @keyframes float
+        {
+            from{top:0px;}
+            to{top:25px;}
+        }
+        .balls2
+        {
+            width:10px;
+            height:10px;
+            background:black;
+            border-radius:50%;
+            position:relative;
+            animation:float 2s infinite alternate;
+            display: inline-block;
+        }
+        @keyframes float
+        {
+            from{top:0px;}
+            to{top:25px;}
+        }
+        .balls3
+        {
+            width:10px;
+            height:10px;
+            background:black;
+            border-radius:50%;
+            position:relative;
+            animation:float 2.5s infinite alternate;
+            display: inline-block;
+        }
+        @keyframes float
+        {
+            from{top:0px;}
+            to{top:25px;}}
+
+@keyframes bounce{
+  from{ transform: translateY(0); }
+  to{ transform: translateY(-10px); }
+}
+
+.logo{
+  width:80px;
+  height:50px;
+  background:gold;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  animation: float 1.5s infinite alternate;
+}
+
+@keyframes float{
+  from{ transform: translateY(0); }
+  to{ transform: translateY(20px); }
+}
+.progress{
+  width:250px;
+  height:15px;
+  background:#ddd;
+}
+
+.bar{
+  height:100%;
+  background:green;
+  animation: slide 2s infinite alternate;
+}
+
+@keyframes slide{
+  from{ width:0%; }
+  to{ width:100%; }
+}
+
+
+</style>
+</head>
+
+<body>
+<h3>Task 1: Blinking Text Loader </h3>
+<h2 class="blink">Loading...</h2>
+
+<h3>Task 2: Rotating Circular Loader</h3>
+<div class="loader"></div>
+   <div class="bouncing">
+            <h3>Task: Bouncing balls</h3>
+            <div class="balls1"></div>
+            <div class="balls2"></div>
+            <div class="balls3"></div>
+        </div>
+        <br>
+
+</div>
+
+<h3>Task 4: Floating Logo</h3>
+<div class="logo">LOGO</div>
+
+<h3>Task 5: Sliding Progress Bar</h3>
+<div class="progress">
+  <div class="bar"></div>
+</div>
+
+
+</body>
+</html>
